@@ -108,7 +108,8 @@
             "en": "Post Office"
           }
         }
-      ]
+      ],
+      "wayHandling": "both outline and center"
     }
   ],
   "roamingRenderings": []
