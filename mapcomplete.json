@@ -83,9 +83,9 @@
         }
       },
       "description": {
-        "en": "A layer containing post offices."
+        "en": "A layer showing post offices."
       },
-      "tagRenderings": [],
+      "tagRenderings": ["images"],
       "hideUnderlayingFeaturesMinPercentage": 0,
       "icon": {
         "render": "https://upload.wikimedia.org/wikipedia/commons/8/82/Emojione_BW_1F3E4.svg"
