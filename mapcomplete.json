@@ -40,7 +40,7 @@
       "description": {
         "en": "The layer showing postboxes."
       },
-      "tagRenderings": [],
+      "tagRenderings": ["images"],
       "hideUnderlayingFeaturesMinPercentage": 0,
       "icon": {
         "render": "https://upload.wikimedia.org/wikipedia/commons/6/6d/726-postbox.svg"
