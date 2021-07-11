@@ -1,0 +1,132 @@
+{
+	"id": "postboxes",
+	"title": {
+		"en": "Postbox and Post Office Map"
+	},
+	"shortDescription": {
+		"en": "A map showing postboxes and post offices"
+	},
+	"description": {
+		"en": "On this map you can find and add data of post offices and post boxes. You can use this map to find where you can mail your next postcard! :) "
+	},
+	"language": [
+		"en"
+	],
+	"maintainer": "",
+	"icon": "https://upload.wikimedia.org/wikipedia/commons/6/6d/726-postbox.svg",
+	"version": "0",
+	"startLat": 53.5511,
+	"startLon": 9.9937,
+	"startZoom": 13,
+	"widenFactor": 0.05,
+	"socialImage": "",
+	"layers": [{
+			"id": "postboxes",
+			"name": {
+				"en": "Postbox"
+			},
+			"minzoom": 12,
+			"overpassTags": {
+				"and": [
+					"amenity=post_box"
+				]
+			},
+			"title": {
+				"render": {
+					"en": "Postbox"
+				}
+			},
+			"description": {
+				"en": "The layer showing postboxes."
+			},
+			"tagRenderings": [
+				"images",
+				{
+					"#": "OH",
+					"render": "{opening_hours_table(opening_hours)}",
+					"freeform": {
+						"key": "opening_hours",
+						"type": "opening_hours"
+					},
+
+					"question": {
+						"en": "When are the pickup times at this post box?"
+					},
+
+					"mappings": [{
+						"if": "opening_hours=24/7",
+						"then": "24/7 opened (including holidays)"
+					}]
+				}
+			],
+			"hideUnderlayingFeaturesMinPercentage": 0,
+			"icon": {
+				"render": "https://upload.wikimedia.org/wikipedia/commons/6/6d/726-postbox.svg"
+			},
+			"width": {
+				"render": "8"
+			},
+			"iconSize": {
+				"render": "40,40,bottom"
+			},
+			"color": {
+				"render": "#00f"
+			},
+			"presets": [{
+				"tags": [
+					"amenity=post_box"
+				],
+				"title": {
+					"en": "Postbox"
+				}
+			}],
+			"wayHandling": 1
+		},
+		{
+			"id": "postoffices",
+			"name": {
+				"en": "A layer containing post offices"
+			},
+			"minzoom": 12,
+			"overpassTags": {
+				"and": [
+					"amenity=post_office"
+				]
+			},
+			"title": {
+				"render": {
+					"en": "Post Office"
+				}
+			},
+			"description": {
+				"en": "A layer showing post offices."
+			},
+			"tagRenderings": [
+				"images"
+			],
+			"hideUnderlayingFeaturesMinPercentage": 0,
+			"icon": {
+				"render": "https://upload.wikimedia.org/wikipedia/commons/8/82/Emojione_BW_1F3E4.svg"
+			},
+			"width": {
+				"render": "8"
+			},
+			"iconSize": {
+				"render": "40,40,bottom"
+			},
+			"color": {
+				"render": "#00f"
+			},
+			"presets": [{
+				"tags": [
+					"amenity=post_office"
+				],
+				"title": {
+					"en": "Post Office"
+				}
+			}],
+			"wayHandling": "both outline and center"
+		}
+	],
+	"roamingRenderings": []
+}
